@@ -11,9 +11,7 @@ Desenvolvida para participar da [Rinha de Backend - 2024/Q1](https://github.com/
 
 ## Docker
 
-Para facilitar diminuir o tamanho da imagem, foi criada uma imagem Docker com uma JRE customizada, considerando apenas
-os
-módulos necessários para a aplicação, utilizando o jlink e jdeps.
+Para diminuir o tamanho da imagem, foi criada uma imagem Docker com uma JRE customizada, considerando apenas os módulos necessários para a aplicação, utilizando o jlink e jdeps.
 
 ### Construção da Imagem
 
