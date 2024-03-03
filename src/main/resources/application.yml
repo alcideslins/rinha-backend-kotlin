@@ -1,0 +1,32 @@
+server:
+  port: ${PORT:8080}
+
+warmup:
+  enabled: ${WARMUP_ENABLED:true}
+  host: ${WARMUP_HOST:http://localhost:${server.port}}
+  requests: ${WARMUP_REQUESTS:100}
+
+spring:
+  application:
+    name: rinha-app
+
+  jpa:
+    open-in-view: false
+    hibernate:
+      ddl-auto: none
+
+  datasource:
+    url: ${DB_URL:jdbc:postgresql://${DB_HOSTNAME:localhost}:5432/rinhadb}
+    username: ${DB_USER:rinha}
+    password: ${DB_PASSWORD:rinha123}
+    hikari:
+      maximum-pool-size: ${DB_POOL_SIZE:10}
+
+  web:
+    locale: pt_BR
+
+  jackson:
+    deserialization:
+      accept-float-as-int: false
+      fail-on-ignored-properties: false
+
