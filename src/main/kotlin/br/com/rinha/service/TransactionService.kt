@@ -8,9 +8,9 @@ import br.com.rinha.repository.StatementTransactionRepository
 import org.springframework.stereotype.Service
 
 @Service
-class TransactionService internal constructor(
-  private val registerRepository: RegisterTransactionRepository,
-  private val statementRepository: StatementTransactionRepository
+class TransactionService(
+  val registerRepository: RegisterTransactionRepository,
+  val statementRepository: StatementTransactionRepository
 ) {
 
   fun register(id: Int, transactionRequest: TransactionRequest): TransactionResponse? {

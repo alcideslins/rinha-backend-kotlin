@@ -7,7 +7,6 @@ services:
     environment:
       - DB_HOSTNAME=db
       - DB_POOL_SIZE=10
-#      - JAVA_TOOL_OPTIONS=-Xss168k -Xms140m -Xmx218m
       - WARMUP_HOST=http://api01:8080
       - WARMUP_ENABLED=true
       - WARMUP_REQUESTS=10
@@ -27,7 +26,6 @@ services:
     environment:
       - DB_HOSTNAME=db
       - DB_POOL_SIZE=10
-#      - JAVA_TOOL_OPTIONS=-Xss168k -Xms140m -Xmx218m
       - WARMUP_HOST=http://api02:8080
       - WARMUP_ENABLED=true
       - WARMUP_REQUESTS=10
